@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box</title>
+    <style>
+        #zone1{
+            background-color: gray;
+            position: relative;  /*quy định mọi thứ bên trong nó*/
+        }
+        div{
+            width: 10rem;
+            height: 3rem;
+            background-color: blueviolet;
+            margin: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+        div:nth-child(3){
+            position: absolute;
+            top:0;
+            right: 0;
+            /*opacity: .4;*/ /*làm mờ*/
+            background-color: rgba(150,255,201,.4); /*làm mờ nhưng không làm mờ chữ*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Box</h1>
+    <section id="zone1">
+        <div>box1</div>
+        <div>box2</div>
+        <div>box3</div>
+        <div>box4</div>
+    </section>
+</body>
+</html>
