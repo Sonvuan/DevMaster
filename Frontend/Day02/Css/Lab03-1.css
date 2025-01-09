@@ -1,0 +1,42 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    background-color: #e2d7e7;
+
+}
+nav ul{
+list-style: none;
+display: flex;
+}
+nav li{
+    border-right: 1px solid #fff;
+}
+nav a{
+    display: block;
+    padding: .5rem 3rem;
+    text-decoration: none;
+    color: black;
+    font: 1em sans-serif;
+}
+nav li:hover{
+    background-color: rgb(208, 189, 189);
+}
+nav li:first-child{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.logo1{
+    width: 10rem;
+}
+.logo1 img{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-left: 10rem;
+    
+}
