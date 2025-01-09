@@ -1,0 +1,46 @@
+    /* reset css */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* style cơ bản cho web */
+body{
+    font-family: sans-serif;
+    color: #222;
+}
+ /* style cơ bản cho menu */
+#menu ul{
+    background: #7fffd4;
+    list-style-type: none; /*xóa đi dấu chấm ul*/
+    text-align: center;
+}
+#menu li{
+    color: #f1f1f1;
+    display: inline-block; /* hiển thị menu ngang */
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+}
+#menu ul li a{
+    color: #342b93;
+    text-decoration: none;
+    display: block; /* phủ kín menu */
+}
+#menu ul li a:hover{
+    background: #f1f1f1;
+    color: #0c0a0a
+}
+#menu ul li >.sub-menu{
+    display: none;
+    position: absolute;
+}
+#menu li{
+    position: relative;
+}
+.sub-menu{
+    display: none;
+    position: absolute; /* luôn nằm trong phầnn tử mẹ (#menu li) */
+}
+#menu ul li:hover .sub-menu{
+    display: block;
+}
