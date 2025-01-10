@@ -25,6 +25,7 @@ body{
     color: #342b93;
     text-decoration: none;
     display: block; /* phủ kín menu */
+    
 }
 #menu ul li a:hover{
     background: #f1f1f1;
@@ -33,14 +34,17 @@ body{
 #menu ul li >.sub-menu{
     display: none;
     position: absolute;
+
 }
 #menu li{
     position: relative;
 }
-.sub-menu{
+.sub-menu > li{
     display: none;
     position: absolute; /* luôn nằm trong phầnn tử mẹ (#menu li) */
+    border-bottom: 1px solid black;
 }
 #menu ul li:hover .sub-menu{
     display: block;
+
 }
