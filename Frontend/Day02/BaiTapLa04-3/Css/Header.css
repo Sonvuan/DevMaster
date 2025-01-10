@@ -1,0 +1,66 @@
+.conainer{
+    display: flex;
+    justify-content: space-between;
+}
+.clearfix{
+    overflow: hidden;
+    clear: both;
+}
+header{
+    background: #2d303a;
+}
+.fixwidth{
+    width: 940px;
+    margin: 0 auto;
+}
+.topnav{
+    width: 940px;
+    margin: 0 auto;
+    padding: 34px 0;
+}
+@font-face {
+    font-family: Lato-Bold;
+    src: url("/font/Lato/Lato-Bold.ttf");
+}
+@font-face {
+    font-family: Lato-Black;
+    src: url("/font/Lato/Lato-Black.ttf");
+}
+@font-face {
+    font-family: Lato-Light;
+    src: url("/font/Lato/Lato-Light.ttf");
+}
+#logo{
+    width: 200px;
+    float: left;
+}
+a{
+    text-decoration: none;
+}
+#logo a{
+    color: #fff;
+    font-family: Lato-Bold;
+    font-size: 25px;
+}
+#logo a span{
+    color: #f06c64;
+}
+.topnav nav{
+    float: right;
+    width: 431px;
+}
+.topnav nav ul li{
+    float: left;
+}
+.topnav nav ul li{
+    color: #fff;
+    display: block;
+    padding-top: 10px;
+    padding-right: 20px;
+    font-family: Lato-Bold;
+    font-size: 12px;
+}
+.selected,
+.topnav nav ul li a:hover{
+    color: #f06c64;
+}
