@@ -1,0 +1,65 @@
+#navTop {
+    width: 960px;
+    margin: 0 auto;
+    background: #ccc;
+    height: 40px;
+}
+
+#navTop ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+#navTop ul li {
+    float: left;
+    border-right: 1px solid #fff;
+    position: relative; /* Quan trọng để định vị menu con */
+}
+
+#navTop ul li > ul {
+    position: absolute;
+    top: 40px; /* Đưa menu con xuống dưới */
+    left: 0;
+    width: 159px;
+    background: #a6a1c9;
+    visibility: hidden; /* Ẩn menu con */
+    opacity: 0;
+    transition: visibility 0.3s, opacity 0.3s;
+}
+
+#navTop ul li:hover > ul {
+    visibility: visible; /* Hiển thị menu con khi hover */
+    opacity: 1;
+}
+
+#navTop ul li > ul li {
+    border-bottom: 1px solid #fff;
+}
+
+#navTop ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 10px 30px;
+    color: #000;
+}
+
+#navTop ul li a:hover {
+    background: red;
+    color: #fff;
+}
+
+#navTop ul li > ul li > ul {
+    position: absolute;
+    top: 0px;
+    left: 159px; /* Đưa menu cấp 3 sang phải */
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.3s, opacity 0.3s;
+}
+
+#navTop ul li > ul li:hover > ul {
+    visibility: visible;
+    opacity: 1;
+}
