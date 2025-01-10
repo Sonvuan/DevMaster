@@ -23,6 +23,8 @@
     top: 40px; /* Đưa menu con xuống dưới */
     left: 0;
     width: 159px;
+    display: flex;
+    flex-direction: column;
     background: #a6a1c9;
     visibility: hidden; /* Ẩn menu con */
     opacity: 0;
