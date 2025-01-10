@@ -2,3 +2,78 @@
     background: #f06c64;
     padding: 50px 0;
 }
+
+@font-face {
+    font-family: Lato-Bold;
+    src: url("/font/Lato/Lato-Bold.ttf");
+}
+@font-face {
+    font-family: Lato-Black;
+    src: url("/font/Lato/Lato-Black.ttf");
+}
+@font-face {
+    font-family: Lato-Light;
+    src: url("/font/Lato/Lato-Light.ttf");
+}
+#ourServices{
+    padding: 66px 0;
+    background: #f2f2f2;
+}
+#portfolio h2,
+#aboutUs h3,
+#getaQuote h3,
+#ourServices h1{
+    font-family: Lato-Black;
+    font-size: 30px;
+    color: #666d89;
+    
+}
+#portfolio p,
+#aboutUs p,
+#getaQuote p,
+#ourServices p{
+    font-family: Lato-Light;
+    color: #767e9e;
+    font-size: 18px;
+    line-height: 30px;
+    padding: 30px 0;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.flex > div{
+    margin: 20px;
+}
+.itemService{
+    width: 220px;
+    margin-right: 20px;
+    margin-left: 80px;
+}
+#portfolio{
+    background: #2d303a;
+    padding: 65px 0;
+
+}
+.portfolio{
+    margin-bottom: 18px;
+}
+.portfolio ul li{
+    float: left;
+    margin-right: 10px;
+}
+.portfolio ul li a{
+    display: block;
+    color: #767e9e;
+    font-size: 12px;
+    padding: 5px;
+    border: 1px solid#767e9e;
+    border-radius: 5px;
+
+}
+.selectedx,
+.portfolio ul li a:hover{
+    border: 1px solid #c5c5c5 !important;
+    color: #c5c5c5 !important;
+}
