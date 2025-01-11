@@ -16,13 +16,14 @@
     src: url("/font/Lato/Lato-Light.ttf");
 }
 #ourServices{
-    padding: 66px 0;
+    padding: 20px 80px;
     background: #f2f2f2;
 }
+
 #portfolio h2,
 #aboutUs h3,
 #getaQuote h3,
-#ourServices h1{
+#ourServices h1,h3{
     font-family: Lato-Black;
     font-size: 30px;
     color: #666d89;
@@ -41,10 +42,11 @@
 .flex{
     display: flex;
     flex-wrap: wrap;
-    gap: 5px;
+    gap: 10px;
+    
 }
 .flex > div{
-    margin: 20px;
+    margin: 40px;
 }
 .itemService{
     width: 220px;

@@ -6,6 +6,7 @@
 .clearfix{
     overflow: hidden;
     clear: both;
+    
 }
 header{
     background: #2d303a;
@@ -13,6 +14,7 @@ header{
 .fixwidth{
     width: 940px;
     margin: 0 auto;
+    
 }
 .topnav{
     width: 940px;
