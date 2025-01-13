@@ -23,7 +23,7 @@
 #portfolio h2,
 #aboutUs h3,
 #getaQuote h3,
-#ourServices h1,h3{
+#ourServices h1{
     font-family: Lato-Black;
     font-size: 30px;
     color: #666d89;
@@ -64,6 +64,7 @@
 .portfolio ul li{
     float: left;
     margin-right: 10px;
+    list-style: none;
 }
 .portfolio ul li a{
     display: block;
@@ -78,4 +79,85 @@
 .portfolio ul li a:hover{
     border: 1px solid #c5c5c5 !important;
     color: #c5c5c5 !important;
+}
+
+#aboutUs .itemAvata h4,
+#ourServices h3{
+    font-family: Lato-Black;
+    font-size: 18px;
+    color: #666d89;
+}
+.itemfix{
+    margin-right: 0;
+}
+#aboutUs{
+    padding: 66px 0;
+
+}
+.item{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 70px;
+    justify-content: space-around;
+    
+}
+
+#aboutUs .itemAvata p,
+#ourService .itemService p{
+    line-height: 21px;
+}
+
+#aboutUs ul {
+    list-style: none;
+    padding: 0; 
+    margin: 0; 
+}
+
+
+#aboutUs ul li {
+    display: inline-block; 
+    margin-right: 5px;
+}
+
+#getaQuote{
+    padding: 66px;
+    background: #f06c64;
+}
+.itemform{
+    float: left;
+    width: 620px;
+
+}
+.itemform input,
+.itemform textarea{
+    background: #d6564f;
+    width: 90%;
+    border: none;
+    padding: 10px 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    color: #f48c8f;
+
+}
+.form{
+    display: flex;
+    justify-content: space-between;
+}
+.contactform{
+    float: left;
+    width: 300px;
+}
+.contactform h4{
+    font-family: Lato-Black;
+    font-size: 18px;
+    color: #f0d8d9;
+}
+.contactform .css,
+.contactform ul li{
+    color: #f0d8d9 !important;
+}
+.contactform ul li a{
+    background-position: 0 9px;
+    display: block;
+    color: #f0d8d9;
 }
