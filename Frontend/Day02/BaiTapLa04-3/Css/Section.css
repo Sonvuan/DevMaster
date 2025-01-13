@@ -123,14 +123,15 @@
     padding: 66px;
     background: #f06c64;
 }
-.itemform{
+ #form .itemform{
     float: left;
     width: 620px;
+    
 
 }
 .itemform input,
 .itemform textarea{
-    background: #d6564f;
+    background: #2d303a;
     width: 90%;
     border: none;
     padding: 10px 10px;

@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+footer .footer li{
+    float: left;
+    margin-left: 5px;
+}
+footer{
+    background: #2d303a;
+    padding: 22px 0;
+    
+}
+footer .footer{
+    float: right;
+    list-style: none;
+}
+footer address{
+    float: left;
+    width: 300px;
+    padding-top: 10px;
+    color: #c5c5c5;
+}
