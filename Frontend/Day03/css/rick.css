@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    font-family: "UTMSwissCondensed";
+    font-size: 16px;
+}
+h1,h2,h3,h4,h5{
+    font-family:"UTMSwissCondensedBold" ;
+}
+.container{
+    width: 1444px;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo, .contact{
+    width: 25%;
+}
+.title{
+    width: 50%;
+    text-align: center;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+}
+.contact div{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 40%;
+}
+.contact >a {
+    margin-left: 40%;
+
+}
+header h2{
+    font-size: 3.125rem;
+    color: #ff7e00;
+}
+header p{
+    font-size: 1.5625rem;
+    color: #1670c5;
+    font-weight: bold;
+}
+.contact > a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #1670c5;
+}
+.contact div > a{
+    background: #1670c5;
+    display: block;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .75rem;
+}
+.contact a> i{
+    color: #ffff;
+}
+nav{
+    background-color: #1670c5;
+}
+nav form i{
+    transform: rotate(90deg);
+}
+nav form input::placeholder{
+    text-align: right;
+}
