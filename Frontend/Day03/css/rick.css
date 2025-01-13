@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 html, body{
     font-family: "UTMSwissCondensed";
@@ -67,9 +68,111 @@ header p{
 nav{
     background-color: #1670c5;
 }
+.d-flex{
+    display: flex;
+}
+.justify-content-space-between{
+    justify-content: space-between;
+}
+.justify-content-space-around{
+    justify-content: space-around;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.align-item-center{
+    align-items: center;
+}
 nav form i{
     transform: rotate(90deg);
+
 }
 nav form input::placeholder{
     text-align: right;
+}
+nav a{
+    display: block;
+    padding: 2.5rem 1rem;
+    color: #ffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+}
+form{
+    position: relative;
+}
+nav form i{
+    position: absolute;
+    color: #1670c5;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    top: 50%;
+    transform: translateY(-50%) rotate(90deg);
+}
+nav form input{
+    border: 1px solid #fff;
+    border-radius: .5rem;
+    padding:.5rem;
+    width: 250px;
+    font-size: 1.2rem;
+}
+nav form input:focus{
+    outline: none;
+    border: 1px solid #fff;
+    text-align: right;
+    
+}
+
+.position-relative{
+    position: relative;
+}
+.position-absolute{
+    position: absolute;
+}
+.dm-loai{
+    position: absolute;
+    margin: 0 auto;
+    width: 1444px;
+    height: 110px;
+    transform: translateY(-50%);
+    background: #fff;
+    top: 0;
+
+}
+#dm-loai a{
+    font-family: "UTMSwissCondensedBold";
+    font-weight: bold;
+    font-size: 1.5625rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #162432;
+    margin-left: .5rem;
+
+}
+#dm-loai a:hover{
+    color: #ff7e00;
+}
+h2{
+    font-size: 2.8125rem;
+    color: #1670c5;
+}
+#gioi-thieu{
+    margin-top: 55px;
+    background: #f6f6f6;
+}
+#gioi-thieu h2 img{
+    margin: 0 2rem;
+}
+.head-title{
+    padding: 2rem 0;
+}
+#gioi-thieu h2::before{
+    position: absolute;
+    content: "";
+    width: calc(100% - 204px - 5rem);
+    height: .25rem;
+    background-color: #00aeef;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
 }
