@@ -176,3 +176,27 @@ h2{
     transform: translateX(-50%);
     bottom: 0;
 }
+.col-50 {
+    width: 480px;
+    margin-left: 90px;
+    margin-top: 32px;
+
+}
+.col-50 div b{
+    color: #1670c5;
+
+}
+.col-50 h2{
+    font-size: 1.5625rem;
+    color: #1d1d1d;
+}
+ .col-50 div img{
+    width: 19px;
+    height: 19px;
+ }
+ .col-50 div{
+    gap: 14px;
+ }
+ .col-50 p {
+    font-size: 0.8rem;
+ }
