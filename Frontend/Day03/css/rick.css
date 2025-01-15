@@ -68,6 +68,9 @@ header p{
 nav{
     background-color: #1670c5;
 }
+.i-play{
+    display: inline-block;
+}
 .d-flex{
     display: flex;
 }
@@ -177,7 +180,7 @@ h2{
     bottom: 0;
 }
 .col-50 {
-    width: 480px;
+    width: 600px;
     margin-left: 90px;
     margin-top: 32px;
 
@@ -197,6 +200,107 @@ h2{
  .col-50 div{
     gap: 14px;
  }
- .col-50 p {
-    font-size: 0.8rem;
+ #hanh-dong h2::before{
+    position: absolute;
+    content: "";
+    width: calc(100% - 204px - 5rem);
+    height: .25rem;
+    background-color: #00aeef;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
+ #hanh-dong{
+    background-image: url(/Day03/images/backgroud1.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    margin-bottom: 95px;
  }
+ 
+ #hanh-dong div p{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #1670c5;
+    text-align: center;
+    margin-top: 30px;
+ }
+ #mo-ta{
+    background-image: url(/Day03/images/background3.png);
+    background-size: cover;
+    background-color: #f6f6f6;
+ }
+ #mo-ta div img{
+    margin-top: 94px;
+    height: 129px;
+    
+ }
+ #mo-ta div h2{
+    color: #fff;
+    font-size: 2.8125rem;
+    text-align: center;
+ }
+ #mo-ta div p{
+    font-size: 1.5rem;
+    color: #ffff;
+    text-align: center;
+ }
+#tin-tuc{
+    background-color: #f6f6f6;
+}
+ #tin-tuc h2::before{
+    position: absolute;
+    content: "";
+    width: calc(100% - 204px - 5rem);
+    height: .25rem;
+    background-color: #00aeef;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
+.menu .menu1 h3{
+   text-align: center;
+   color: #999797;
+   height: 72px;
+   padding-top: 35px;
+   
+}
+.menu {
+    border-bottom:15px solid #3184bf;
+}
+.menu1{
+    width: 471px;
+    background-color: 3184bf;
+
+}
+.menu2{
+    margin-top: 45px;
+}
+
+.menu2 .menu3{
+    margin: 20px;
+}
+.menu .menu1 h3:hover{
+    background-color: #3184bf;
+    color: #ffff;
+}
+.noi-dung{
+    margin-top: 1rem;
+    padding-top: 2rem;
+    padding-left: 1rem;
+}
+.noi-dung p{
+    padding-top: 1rem;
+    font-style: "UTMSwissCondensed";
+}
+.noi-dung div{
+    margin-top: 1.6250rem;
+}
+.noi-dung div img{
+    padding-left: 12.8750rem ;
+    padding-right: 2rem;
+}
+.noi-dung div a{
+    text-decoration: none;
+    color: #2c2c2c;
+    font-style: "UTMSwissCondensed";
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tin tức và sự kiện</title>
+    <style>
+/* Container chứa tất cả các mục */
+.menu-container {
+    display: flex;
+    justify-content: space-between; /* Giãn đều các mục */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    gap: 20px; /* Khoảng cách giữa các mục */
+}
+
+/* Mỗi mục trong menu */
+.menu-item {
+    background: linear-gradient(135deg, #007BFF, #0056b3); /* Hiệu ứng màu gradient */
+    border-radius: 15px; /* Bo góc */
+    padding: 20px 30px; /* Khoảng cách bên trong */
+    text-align: center; /* Canh giữa nội dung */
+    color: #fff; /* Màu chữ trắng */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Bóng đổ */
+    transition: transform 0.3s, box-shadow 0.3s; /* Hiệu ứng hover */
+    flex: 1; /* Mỗi mục chiếm khoảng không gian bằng nhau */
+}
+
+/* Hiệu ứng hover */
+.menu-item:hover {
+    transform: scale(1.05); /* Phóng to nhẹ khi hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /* Bóng đổ rõ hơn khi hover */
+}
+
+/* Tiêu đề trong mục */
+.menu-item h2 {
+    font-size: 1.5em; /* Kích thước chữ */
+    font-weight: bold;
+    margin: 0; /* Xóa khoảng cách mặc định */
+}
+
+    </style>
+</head>
+<body>
+    <div class="menu-container">
+        <div class="menu-item">
+            <h2>TIN TỨC</h2>
+        </div>
+        <div class="menu-item">
+            <h2>TIN BÁO CHÍ</h2>
+        </div>
+        <div class="menu-item">
+            <h2>QUAN HỆ CỔ ĐÔNG</h2>
+        </div>
+    </div>
+    
+</body>
+</html>
