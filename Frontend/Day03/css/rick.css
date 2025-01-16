@@ -7,7 +7,7 @@ html, body{
     font-family: "UTMSwissCondensed";
     font-size: 16px;
 }
-h1,h2,h3,h4,h5{
+h1,h2,h4,h5{
     font-family:"UTMSwissCondensedBold" ;
 }
 .container{
@@ -303,4 +303,106 @@ h2{
     text-decoration: none;
     color: #2c2c2c;
     font-style: "UTMSwissCondensed";
+}
+
+#du-an h2::before{
+    position: absolute;
+    content: "";
+    width: calc(100% - 204px - 5rem);
+    height: .25rem;
+    background-color: #00aeef;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
+#du-an  .menu4 div{
+    background-color: #bcbcbc;
+    color: #252525;
+}
+.menu4 div{
+    width: 28.1250rem;
+}
+.menu4 div h4{
+    text-align: center;
+    padding: 1.5rem;
+}
+.menu5 div{
+    margin-top: 54px;
+   width: 453px;
+   height: 345px;
+   text-align: center;
+ 
+   background-color: #f6f6f6;
+}
+.menu5 div img{
+    margin-top: 27px;
+    padding-top: 27px;
+}
+.menu4 div h4:hover{
+    color: #fff;
+    background-color: #3184bf;
+}
+.nut-bam{
+    margin: 50px 542px;
+    background-color: #1670c5;
+    text-align: center;
+    width: 340px;
+    height: 74px;
+}
+.nut-bam p{
+    padding-top: 24px;
+    color: #fff;
+}
+#doi-tac h2::before{
+    position: absolute;
+    content: "";
+    width: calc(100% - 204px - 5rem);
+    height: .25rem;
+    background-color: #00aeef;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
+
+#doi-tac{
+    background-color: #f6f6f6;
+    height: 510px;
+}
+#nhan-hang {
+    margin-top: 63px;
+}
+ #nhan-hang div{
+    background-color: #fff;
+    width: 257px;
+    height: 160px;
+    align-content: center;
+}
+#doi-tac1 .logo {
+    margin-top: 55px;
+}
+#doi-tac1 .logo h3{
+    margin-top: 30px;
+    color: #ffa200;
+    font-size: 35px;
+    font-weight: normal;
+}
+#doi-tac1 .logo p{
+  font-weight: bold;
+}
+.tong-ket >h3{
+    margin-top: 55px;
+    font-size: 30px;
+    font-weight: normal;
+    color: #191201;
+}
+.tong-ket p{
+    color: #191201;
+    font-size: 18px;
+}
+footer{
+    background: #3184bf;
+    text-align: center;
+    align-content: center;
+    height: 67px;
+    color: #fff;
 }
