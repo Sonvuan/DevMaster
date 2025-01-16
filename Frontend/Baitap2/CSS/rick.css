@@ -112,6 +112,9 @@ nav form i{
     top: 50%;
     transform: translateY(-50%) rotate(90deg);
 }
+nav div ul li{
+    margin: 15px;
+}
 nav form input{
     border: 1px solid #fff;
     border-radius: .5rem;
@@ -124,6 +127,9 @@ nav form input:focus{
     border: 1px solid #fff;
     text-align: right;
     
+}
+nav ul li a:hover{
+    color: #ff7e00;
 }
 
 .position-relative{
@@ -377,6 +383,9 @@ h2{
     height: 160px;
     align-content: center;
 }
+#doi-tac1{
+    height: 394px;
+}
 #doi-tac1 .logo {
     margin-top: 55px;
 }
@@ -397,12 +406,14 @@ h2{
 }
 .tong-ket p{
     color: #191201;
-    font-size: 18px;
+    font-size: 16px;
+    font-weight: 600;
 }
 footer{
     background: #3184bf;
     text-align: center;
     align-content: center;
     height: 67px;
+    font-weight: bold;
     color: #fff;
 }

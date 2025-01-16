@@ -128,6 +128,9 @@ nav form input:focus{
     text-align: right;
     
 }
+nav ul li a:hover{
+    color: #ff7e00;
+}
 
 .position-relative{
     position: relative;
@@ -136,7 +139,7 @@ nav form input:focus{
     position: absolute;
 }
 #banner{
-    background-image: url("/Baitap2/img/banner.png");
+    background-image: url("/Baitap2/img/banner1.png");
     background-repeat: no-repeat;
     background-size: cover;
     height: 16.4375rem;
