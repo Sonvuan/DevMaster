@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "UTMSwissCondensedBold";
+    src: url("/font/Lato/UTMSwiss/UTMSwissCondensedBold.ttf");
+}
+@font-face {
+    font-family: "UTMSwissCondensed";
+    src: url("/font/Lato/UTMSwiss/UTMSwissCondensed.ttf");
+}
+@font-face {
+    font-family: "UTMSwissCondensedBlack";
+    src: url("/font/Lato/UTMSwiss/UTMSwiss721BlackCondensed.ttf");
+}

@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+html, body{
+    font-family: "UTMSwissCondensed";
+    font-size: 16px;
+}
+h1,h2,h4,h5{
+    font-family:"UTMSwissCondensedBold" ;
+}
+.container{
+    width: 1444px;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo, .contact{
+    width: 25%;
+}
+.title{
+    width: 50%;
+    text-align: center;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+}
+.contact div{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 40%;
+}
+.contact >a {
+    margin-left: 40%;
+
+}
+header h2{
+    font-size: 3.125rem;
+    color: #ff7e00;
+}
+header p{
+    font-size: 1.5625rem;
+    color: #1670c5;
+    font-weight: bold;
+}
+.contact > a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #1670c5;
+}
+.contact div > a{
+    background: #1670c5;
+    display: block;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .75rem;
+}
+.contact a> i{
+    color: #ffff;
+}
+nav{
+    background-color: #1670c5;
+}
+.i-play{
+    display: inline-block;
+}
+.d-flex{
+    display: flex;
+}
+.justify-content-space-between{
+    justify-content: space-between;
+}
+.justify-content-space-around{
+    justify-content: space-around;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.align-item-center{
+    align-items: center;
+}
+nav form i{
+    transform: rotate(90deg);
+
+}
+nav form input::placeholder{
+    text-align: right;
+}
+nav a{
+    display: block;
+    padding: 2.5rem 1rem;
+    color: #ffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+}
+form{
+    position: relative;
+}
+nav form i{
+    position: absolute;
+    color: #1670c5;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    top: 50%;
+    transform: translateY(-50%) rotate(90deg);
+}
+nav div ul li{
+    margin: 15px;
+}
+nav form input{
+    border: 1px solid #fff;
+    border-radius: .5rem;
+    padding:.5rem;
+    width: 250px;
+    font-size: 1.2rem;
+}
+nav form input:focus{
+    outline: none;
+    border: 1px solid #fff;
+    text-align: right;
+    
+}
+
+.position-relative{
+    position: relative;
+}
+.position-absolute{
+    position: absolute;
+}
+#banner{
+    background-image: url("/Baitap2/img/banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 16.4375rem;
+    padding: 4.2500rem 5.9375rem 2.9375rem;
+    color: #fff;
+}
+#banner div{
+    margin:40px
+}
+#banner h1{
+    font-size: 3rem;
+}
+#banner p{
+    font-size: 1.5rem;
+}
+#noi-dung{
+    background-color: #f6f6f6;
+    height: 58.3750rem;
+}
+
+.styled-table {
+    border-top: 2px solid #acacac;
+    border-collapse: collapse; /* Loại bỏ khoảng cách giữa các đường viền */
+    width: 100%; /* Đặt bảng chiếm toàn bộ chiều rộng */
+    text-align: left; /* Căn trái nội dung */
+    margin-top: 3rem;
+  }
+  
+  .styled-table th,
+  .styled-table td {
+    padding: 10px 15px; /* Khoảng cách bên trong ô */
+    border-bottom: 1px solid #ddd; /* Đường viền mỏng dưới mỗi ô */
+  }
+  
+  .styled-table thead th {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .styled-table tbody td:last-child {
+    text-align: center;
+  }
+  
+.tin-tuc{
+    margin-top: 3rem;
+    width: 378px;
+    height: 623px;
+}
+.tin-tuc2 div{
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+    margin-top: 25px;
+}
+.tin-tuc2 div p b{
+    font-size: 18px;
+    color: #3a3a3a;
+
+}
+.tin-tuc2 div p{
+    font-size: 15px;
+    color: #8a8a8a;
+
+}
+#doi-tac1{
+    height: 394px;
+}
+#doi-tac1 .logo {
+    margin-top: 55px;
+}
+#doi-tac1 .logo h3{
+    margin-top: 30px;
+    color: #ffa200;
+    font-size: 35px;
+    font-weight: normal;
+}
+#doi-tac1 .logo p{
+  font-weight: bold;
+}
+.tong-ket >h3{
+    margin-top: 55px;
+    font-size: 30px;
+    font-weight: normal;
+    color: #191201;
+}
+.tong-ket p{
+    color: #191201;
+    font-size: 16px;
+    font-weight: 600;
+}
+footer{
+    background: #3184bf;
+    text-align: center;
+    align-content: center;
+    height: 67px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #fff;
+}
