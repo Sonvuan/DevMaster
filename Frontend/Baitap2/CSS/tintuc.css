@@ -171,6 +171,7 @@ nav ul li a:hover{
     background-color: #f6f6f6;
 
 }
+#bao-chi h2::before,
 #tap-doan h2::before,
 #noi-bat h2::before{
     position: absolute;
@@ -183,6 +184,7 @@ nav ul li a:hover{
     bottom: -3px;
     border-radius: 2px ;
 }
+#bao-chi h2,
 #tap-doan h2,
 #noi-bat h2{
     text-align: center;
