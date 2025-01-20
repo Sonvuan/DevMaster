@@ -166,6 +166,7 @@ nav ul li a:hover{
     background-color: #f6f6f6;
     height: 58.3750rem;
 }
+#bao-chi,
 #tap-doan,
 #noi-bat{
     background-color: #f6f6f6;
@@ -274,9 +275,27 @@ nav ul li a:hover{
     color:#1d1d1d;
 }
 
+.menu2 {
+    height: 616px;
+}
+.menu3 .img{
+    width: 461.33px;
+}
 
-
-
+.noi-dung{
+    margin-top: 20px;
+    background-color: #ffff;
+    padding: 20px 20px 0px 20px;
+    height: 218px;
+}
+.noi-dung div  a{
+    text-decoration: none;
+    color: #1d1d1d;
+}
+.noi-dung div{
+    margin-top: 40px;
+    padding-left: 203px;
+}
 
 #doi-tac1{
     height: 394px;
@@ -302,7 +321,8 @@ nav ul li a:hover{
 .tong-ket p{
     color: #191201;
     font-size: 16px;
-    font-weight: 600;
+ 
+    font-family: "UTMSwissCondensedBold";
 }
 footer{
     background: #3184bf;
