@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+html, body{
+    font-family: "UTMSwissCondensed";
+    font-size: 16px;
+}
+h1,h2,h4,h5{
+    font-family:"UTMSwissCondensedBold" ;
+}
+.container{
+    width: 1444px;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo, .contact{
+    width: 25%;
+}
+.title{
+    width: 50%;
+    text-align: center;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+}
+.contact div{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 40%;
+}
+.contact >a {
+    margin-left: 40%;
+
+}
+header h2{
+    font-size: 3.125rem;
+    color: #ff7e00;
+}
+header p{
+    font-size: 1.5625rem;
+    color: #1670c5;
+    font-weight: bold;
+}
+.contact > a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #1670c5;
+}
+.contact div > a{
+    background: #1670c5;
+    display: block;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .75rem;
+}
+.contact a> i{
+    color: #ffff;
+}
+nav{
+    background-color: #1670c5;
+}
+.i-play{
+    display: inline-block;
+}
+.d-flex{
+    display: flex;
+}
+.justify-content-space-between{
+    justify-content: space-between;
+}
+.justify-content-space-around{
+    justify-content: space-around;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.align-item-center{
+    align-items: center;
+}
+.gap{
+    gap: 30px;
+}
+nav form i{
+    transform: rotate(90deg);
+
+}
+nav form input::placeholder{
+    text-align: right;
+}
+nav a{
+    display: block;
+    padding: 2.5rem 1rem;
+    color: #ffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+}
+form{
+    position: relative;
+}
+nav form i{
+    position: absolute;
+    color: #1670c5;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    top: 50%;
+    transform: translateY(-50%) rotate(90deg);
+}
+nav div ul li{
+    margin: 15px;
+}
+nav form input{
+    border: 1px solid #fff;
+    border-radius: .5rem;
+    padding:.5rem;
+    width: 250px;
+    font-size: 1.2rem;
+}
+nav form input:focus{
+    outline: none;
+    border: 1px solid #fff;
+    text-align: right;
+    
+}
+nav ul li a:hover{
+    color: #ff7e00;
+}
+
+.position-relative{
+    position: relative;
+}
+.position-absolute{
+    position: absolute;
+}
+#banner{
+    background-image: url("/Baitap2/img/tintuc/banner2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 16.4375rem;
+    padding: 4.2500rem 5.9375rem 2.9375rem;
+    color: #fff;
+}
+#banner div{
+    margin:40px
+}
+#banner h1{
+    font-size: 3rem;
+}
+#banner p{
+    font-size: 1.5rem;
+}
+#noi-dung{
+    background-color: #f6f6f6;
+    height: 58.3750rem;
+}
+#noi-bat{
+    background-color: #f6f6f6;
+
+}
+#noi-bat h2::before{
+    position: absolute;
+    content: "";
+    width: 130px;
+    height: 0.3rem;
+    background-color: #1670c5;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -3px;
+    border-radius: 2px ;
+}
+#noi-bat h2{
+    text-align: center;
+    color: #1670c5;
+    font-size: 2.5rem;
+    border-bottom: 2px solid #cccccc;
+    width: 330px;
+    margin:6.0625rem;
+    
+}
+.noi-bat1{
+    background-image: url("/Baitap2/img/tintuc/kinhlup.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 661px;
+    height: 525px;
+   
+}
+.noi-bat2{
+    background-image: url("/Baitap2/img/tintuc/world.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 359px;
+    height: 525px;
+}
+.noi-bat3{
+    background-image: url("/Baitap2/img/tintuc/telephone.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 359px;
+    height: 525px;
+}
+.noi-bat1 .noi-bat1a{
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+    width: 636px;
+    height: 525px;
+    align-content: flex-end;
+    padding-left: 25px;
+    color: #fff;
+}   
+.noi-bat1b div,
+.noi-bat1a div{
+    color: #1670c5;
+    border: 1px solid;
+    background-color: #ffff;
+    width: 137px;
+    height: 30px;
+    text-align: center;
+}
+
+ .noi-bat1b{
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+    width: 335px;
+    height: 525px;
+    align-content: flex-end;
+    padding-left: 25px;
+    color: #fff;
+}   
+
+#doi-tac1{
+    height: 394px;
+}
+#doi-tac1 .logo {
+    margin-top: 55px;
+}
+#doi-tac1 .logo h3{
+    margin-top: 30px;
+    color: #ffa200;
+    font-size: 35px;
+    font-weight: normal;
+}
+#doi-tac1 .logo p{
+  font-weight: bold;
+}
+.tong-ket >h3{
+    margin-top: 55px;
+    font-size: 30px;
+    font-weight: normal;
+    color: #191201;
+}
+.tong-ket p{
+    color: #191201;
+    font-size: 16px;
+    font-weight: 600;
+}
+footer{
+    background: #3184bf;
+    text-align: center;
+    align-content: center;
+    height: 67px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #fff;
+}
