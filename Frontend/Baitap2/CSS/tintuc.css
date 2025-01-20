@@ -89,6 +89,10 @@ nav{
 .gap{
     gap: 30px;
 }
+.colum{
+    flex-direction: column;
+}
+
 nav form i{
     transform: rotate(90deg);
 
@@ -162,10 +166,12 @@ nav ul li a:hover{
     background-color: #f6f6f6;
     height: 58.3750rem;
 }
+#tap-doan,
 #noi-bat{
     background-color: #f6f6f6;
 
 }
+#tap-doan h2::before,
 #noi-bat h2::before{
     position: absolute;
     content: "";
@@ -177,6 +183,7 @@ nav ul li a:hover{
     bottom: -3px;
     border-radius: 2px ;
 }
+#tap-doan h2,
 #noi-bat h2{
     text-align: center;
     color: #1670c5;
@@ -234,6 +241,40 @@ nav ul li a:hover{
     padding-left: 25px;
     color: #fff;
 }   
+
+
+.tap-doan1b-1,
+.tap-doan1b{
+    width: 840px;
+    height: 306px;
+    margin-bottom: 30px;
+}
+.tap-doan1d div{
+    color: #ababab;
+    font-size: 1rem;
+    font-weight: lighter;
+    margin-top: 10px;
+}
+.tap-doan1c > div{
+    height: 200px;
+    gap:80px
+}
+.tap-doan1c .button  {
+    width: 210px;
+    height: 57px;
+    align-content: center;
+    text-align: center;
+    border: 1px solid #1d1d1d;
+
+}
+.tap-doan1c .button a{
+    text-decoration: none;
+    color:#1d1d1d;
+}
+
+
+
+
 
 #doi-tac1{
     height: 394px;
