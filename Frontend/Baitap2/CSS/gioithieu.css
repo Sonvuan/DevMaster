@@ -271,9 +271,37 @@ nav ul li a:hover{
     background-repeat: no-repeat;
     height: 1260px;
 }
-
-
-
+.subject{
+    gap: 275px;
+}
+.noi-dung2a{
+    position: relative;
+    width: 353px;
+    height: 134px;
+    transform: translateY(180px);
+    padding-left: 160px;
+    margin-bottom: 60px;
+    margin-top: 10px;
+    text-align: right;
+}
+.noi-dung2a h4{
+    text-align: right;
+    font-size: 20px;
+}
+.noi-dung2b h4{
+    text-align: left;
+    font-size: 20px;
+}
+.noi-dung2b{
+    width: 353px;
+    height: 134px;
+    transform: translateY(180px);
+    padding-left: 160px;
+    margin-bottom: 60px;
+    margin-top: 10px;
+    
+    text-align: left;
+}
 
 #doi-tac1{
     height: 394px;
