@@ -168,7 +168,7 @@ nav ul li a:hover{
     background-color: #f6f6f6;
     height: 64.3750rem;
 }
-
+#noi-dung6,
 #bao-chi,
 #tap-doan{
     background-color: #f6f6f6;
@@ -176,6 +176,7 @@ nav ul li a:hover{
 #gioi-thieu{
     background-color: #ffffff;
 }
+#noi-dung7 h2::before,
 #noi-dung4 h2::before,
 #noi-dung3 h2::before,
 #noi-dung2 h2::before,
@@ -191,6 +192,7 @@ nav ul li a:hover{
     bottom: -3px;
     border-radius: 2px ;
 }
+#noi-dung7 h2,
 #noi-dung4 h2,
 #noi-dung3 h2,
 #noi-dung2 h2,
@@ -203,6 +205,7 @@ nav ul li a:hover{
     border-bottom: 2px solid #cccccc;
     width: 330px;  
 }
+#noi-dung7 .head-title,
 #noi-dung4 .head-title,
 #noi-dung3 .head-title,
 #noi-dung2 .head-title,
@@ -433,7 +436,6 @@ nav ul li a:hover{
     color: #1670c5;
     font-size: 20px;
 }
-
 #noi-dung6 h2{
     text-align: center;
     align-content: center;
@@ -464,13 +466,16 @@ nav ul li a:hover{
     transform: translateY(60px);
 }
 .noi-dung6a .mui-ten{
-    margin: 15px 0px 15px 120px;
+    margin: 15px 0px 30px 120px;
     
     
 }
 .noi-dung6a h3{
     font-size: 30px;
 }
+.noi-dung6a-1c,
+.noi-dung6a-1b,
+.noi-dung6a-1a,
 .noi-dung6a-1{
     height: 75px;
     text-align: center;
@@ -478,40 +483,172 @@ nav ul li a:hover{
     background-color:#ff9000;
     color: #fff;
 }
+.noi-dung6a-2a,
 .noi-dung6a-2{
     height: 141px;
     background-color: #fcc783;
-    padding: 20px 0px 15px 20px;
-    margin-bottom: 20px;
+    padding: 20px 0px 0px 20px;
+    margin-bottom: 10px;
 
 }
+.noi-dung6a-3a,
 .noi-dung6a-3{
     height: 206px;
     background-color: #fcc783;
-    padding: 20px 0px 15px 20px;
-    margin-bottom: 20px;
+    padding: 20px 0px 0px 20px;
+    margin-bottom: 10px;
   
 }
 .noi-dung6a-4{
     height: 306px;
     background-color: #fcc783;
-    padding: 20px 0px 15px 20px;
-    
+    padding: 20px 0px 0px 20px;
+    margin-bottom: 10px;
 }
 .noi-dung6a-5{
+    height: 306px;
+    background-color: #fcc783;
+    padding: 20px 0px 0px 20px;
+    margin-bottom: 10px;
+}
+.noi-dung6a-6{
     height: 218px;
     background-color: #ff9000;
     text-align: center;
     padding-top: 20px;
     color: #fff;
 }
+.noi-dung6a-1a{
+    background-color: #d50d0d;
+}
+.noi-dung6a-2a{
+    background-color:#ffa7a7 ;
+}
+.noi-dung6a-3a{
+    background-color: #ffa7a7;
+}
+.noi-dung6a-4a{
+    height: 306px;
+    margin-bottom: 35px;    
+}
 
+.noi-dung6a-4a div{
+    height: 55px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #ffa7a7;
+    margin-bottom: 13px;
+    padding-left: 35px;
+}
+.noi-dung6a-6a {
+    margin-top: 37px;
+    height: 218px;
+    background-color: #d50d0d;
+    text-align: center;
+    padding-top: 20px;
+    color: #fff;
+}
 
+.noi-dung6a-1b{
+    background-color: #1093de;
+}
 
+.noi-dung6a-2b{
+    height: 161px;
+    background-color: #ade1ff;
+    align-content: center;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.noi-dung6a-3b{
+    height: 226px;
+}
+.noi-dung6a-3b-1{
+    height: 80px;
+    align-content: center;
+    background-color: #ade1ff;
+    text-align: center;
+}
+.noi-dung6a-3b-2{
+    height: 135px;
+    align-content: center;
+    margin-top: 10px;
+    background-color: #ade1ff;
+    text-align: center;
+
+}
+
+.noi-dung6a-4b {
+    margin-top: 10px;
+    height: 55px;
+    text-align: center;
+    align-content: center;
+    font-size: 30px;
+    color: #e80c0c;
+    font-weight: bold;
+    background-color: #ade1ff;
+}
+.noi-dung6a-5b{
+    margin-top: 50px;
+    height: 218px;
+    background-color: #1093de;
+    text-align: center;
+    padding-top: 20px;
+    color: #fff;
+}
+
+.noi-dung6a-1c{
+    background-color: #086d52;
+}
+.noi-dung6a-2c{
+    height: 135px;
+    align-content: center;
+    margin-top: 54px;
+    background-color: #a7dcce;
+    text-align: center;
+}
+.noi-dung6a-3c{
+    height: 180px;
+    align-content: center;
+    margin-top: 160px;
+    background-color: #a7dcce;
+    text-align: center;
+}
+
+.noi-dung6a-4c{
+    margin-top: 33px;
+    height: 218px;
+    background-color: #086d52;
+    text-align: center;
+    padding-top: 20px;
+    color: #fff;
+}
+
+.noi-dung7a {
+    width: 280px;
+    min-height: 307px; /* Dùng min-height thay vì height cố định */
+    background-color: #f6f6f6;
+    padding: 10px; /* Thêm padding để tránh sát mép */
+    margin-bottom: 80px;
+}
+
+.noi-dung7a div {
+    text-align: center;
+    flex-grow: 1; /* Đảm bảo các nội dung có cùng chiều cao */
+}
+
+.noi-dung7a p {
+    text-align: justify;
+    margin: 0 auto;
+    width: 90%;
+    line-height: 1.5; /* Thêm khoảng cách giữa các dòng để đồng đều */
+    min-height: 80px; /* Đảm bảo chiều cao của đoạn văn đồng đều */
+}
 
 
 #doi-tac1{
     height: 394px;
+    background-color: #f6f6f6;
 }
 #doi-tac1 .logo {
     margin-top: 55px;
