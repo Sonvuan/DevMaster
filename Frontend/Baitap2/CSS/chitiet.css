@@ -86,6 +86,9 @@ nav{
 .align-item-center{
     align-items: center;
 }
+.gap{
+    gap: 30px;
+}
 nav form i{
     transform: rotate(90deg);
 
@@ -157,9 +160,120 @@ nav ul li a:hover{
 }
 #noi-dung{
     background-color: #f6f6f6;
-    height: 58.3750rem;
+    height: 2316px;
 }
 
+.noi-dung1{
+    width: 981px;
+    height: 1369px;
+    margin-top: 3rem;
+}
+
+.noi-dung1 div{
+    padding-bottom: 25px;
+    
+}
+.noi-dung1 div img{
+    width: 100%;
+}
+.noi-dung1 div p{
+    text-align: justify;
+    margin: 0 auto;
+    width: 100%;
+    line-height: 1.5; /* Thêm khoảng cách giữa các dòng để đồng đều */
+    min-height: 80px; /* Đảm bảo chiều cao của đoạn văn đồng đều */
+}
+.noi-dung2{
+    height: 271px;
+}
+.noi-dung2a-1{
+    width: 350px;
+    height: 76px;
+    background-color: #1670c5;
+    color: #fff;
+    align-items: center;
+    margin-bottom: 22px;
+}
+.noi-dung2a-1 img{
+    margin-right: 30px;
+}
+.noi-dung2b-1{
+    margin-top: 20px;
+}
+.noi-dung2b-1a{
+    width: 181px;
+    height: 187px;
+    background-color: #e8e8e8;
+    font-weight: 500;
+    
+}
+.noi-dung2b-1a div{
+    height: 137px;
+}
+.noi-dung2b-1a img{
+    width: 100%;
+    height: 100%;
+    
+}
+.noi-dung2b a{
+    margin-top: 15px;
+    float: right;
+    text-decoration: none;
+    color: #191201;
+    font-weight: bold;
+}
+
+.lien-he1c {
+    width: 962px;
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.chu-de{
+    width: 330px;
+}
+
+.form-group label {
+    width: 135px; /* Đặt chiều rộng cố định cho label để căn thẳng hàng */
+    text-align: left; /* Căn chữ của label sang phải */
+}
+
+.form-group input{
+    border-radius: 7px;
+    border: 1px solid #e2e2e2;
+    height: 34px;
+    flex: 1;
+    
+}
+
+.form-group1a input{
+    border-radius: 7px;
+    border: 1px solid #e2e2e2;
+    height: 34px;
+    margin-left: 80px;
+    width: 309px;
+
+    
+}
+
+.form-group textarea{
+   flex: 1;
+   height: 85px;
+   border-radius: 7px ;
+   border-color: #e2e2e2;
+   
+}
+
+button{
+    width: 172px;
+    height: 40px;
+    background-color: #1670c5;
+    text-align: center;
+    align-content: center;
+    color: #fff;
+    border: none;
+    margin-left: 136px;
+}
 
 .tin-tuc{
     margin-top: 3rem;
