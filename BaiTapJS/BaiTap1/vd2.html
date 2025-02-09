@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script Language="JavaScript">
+        function Check(){
+            if(myform.age.value < 18 ){
+            document.writeln("<P><H4><I> You are not eligible</I></H4></P>"+myform.name.value);
+            }else{
+            document.writeln("<P><H4><I> You are eligible</I></H4></P>"+myform.name.value);
+            }
+        }
+        function losefocus(){
+            if( myform.name.value==""){
+                alert("You can not leave the name field blank");
+                myform.name.focus();
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action="" name="myform" onchange="losefocus()">
+        <p>
+            <h5><i>Enter name:</i></h5>
+            <input type="text" name="name" size="35" onblur="losefocus()">           
+        </p>
+        <p>
+            <h5><i>Enter age:</i></h5>
+            <input type="text" name="age" size="5">
+        </p>
+
+        <input type="button" value="Check" onclick="Check()">
+        <input type="reset" value="Clear">
+    </form>
+</body>
+</html>
