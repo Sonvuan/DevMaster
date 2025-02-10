@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        function shape(){
+            var i=0;
+            var j=10;
+            var result="";
+            for(i;i<j;i++){
+                var k=0;
+                for(k;k<=i;k++){
+                    result += k;
+                }
+                result += "<br>";
+            }
+            return result;
+        }
+        document.getElementById('demo').innerHTML=shape();
+    </script>
+</body>
+</html>
