@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .error {
+            color: red;
+        }
+    </style>
+    <script>
+        function checkLogin() {
+            var userName = document.getElementById("userName");
+            var passw = document.getElementById("pass");
+
+            // Reset lỗi trước khi kiểm tra
+            document.getElementById("txtErrorUsername").innerHTML = "";
+            document.getElementById("txtErrorPass").innerHTML = "";
+
+            var isValid = true; // Biến kiểm tra xem có lỗi không
+
+            if (userName.value.trim() === "") {
+                document.getElementById("txtErrorUsername").innerHTML = "Bạn chưa nhập user";
+                document.getElementById("txtErrorUsername").className = "error";
+                userName.focus();
+                isValid = false;
+            }
+
+            if (passw.value.trim() === "") {
+                document.getElementById("txtErrorPass").innerHTML = "Bạn chưa nhập pass";
+                document.getElementById("txtErrorPass").className = "error";
+                passw.focus();
+                isValid = false;
+            }
+
+            if (isValid) {
+                alert("Login thành công");
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action="">
+        <table width="350">
+            <caption>
+                <h2>Login</h2>
+            </caption>
+            <tr>
+                <td>User Name</td>
+                <td>
+                    <input type="text" name="userName" id="userName" placeholder="Nhập tên đăng nhập">
+                    <br/> <label id="txtErrorUsername"></label> <!-- Đã sửa tên ID -->
+                </td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td>
+                    <input type="password" name="pass" id="pass" placeholder="Nhập mật khẩu">
+                    <br/> <label id="txtErrorPass"></label>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="button" value="Login" id="login" name="login" onclick="checkLogin()">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

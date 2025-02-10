@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Máy tính đơn giản</title>
+    <script>
+        var number = "";  // Lưu số đầu tiên
+        var pheptinh = ""; // Lưu toán tử
+
+        // Hàm nhập số
+        function getValue(val) {
+            var num = document.getElementById("number").value;
+            document.getElementById("number").value = num + val;
+        }
+
+        // Hàm chọn phép toán
+        function pheptoan(val) {
+            number = document.getElementById("number").value;
+            document.getElementById("number").value = "";
+            pheptinh = val;
+        }
+
+        // Hàm tính toán kết quả
+        function ketqua() {
+            var ketquaTinh = 0;
+            var currentNumber = document.getElementById("number").value;
+
+            if (number === "" || currentNumber === "") {
+                alert("Vui lòng nhập đủ số!");
+                return;
+            }
+
+            switch (pheptinh) {
+                case "+":
+                    ketquaTinh = parseFloat(number) + parseFloat(currentNumber);
+                    break;
+                case "-":
+                    ketquaTinh = parseFloat(number) - parseFloat(currentNumber);
+                    break;
+                case "*":
+                    ketquaTinh = parseFloat(number) * parseFloat(currentNumber);
+                    break;
+                case "/":
+                    if (parseFloat(currentNumber) === 0) {
+                        alert("Không thể chia cho 0!");
+                        return;
+                    }
+                    ketquaTinh = parseFloat(number) / parseFloat(currentNumber);
+                    break;
+                default:
+                    alert("Chưa chọn phép toán!");
+                    return;
+            }
+
+            document.getElementById("number").value = ketquaTinh;
+            number = "";
+            pheptinh = "";
+        }
+
+        // Hàm reset máy tính
+        function reset() {
+            number = "";
+            pheptinh = "";
+            document.getElementById("number").value = "";
+        }
+    </script>
+</head>
+<body>
+    <table width="120" border="1">
+        <tr>
+            <td colspan="4">
+                <input type="text" name="number" id="number">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="1" name="num1" id="num1" onclick="getValue(this.value)">
+            </td>
+            <td>
+                <input type="button" value="2" name="num2" id="num2" onclick="getValue(this.value)">
+            </td>
+            <td>
+                <input type="button" value="3" name="num3" id="num3" onclick="getValue(this.value)">
+            </td>
+            <td>
+                <input type="button" value="+" name="plus" id="plus" onclick="pheptoan(this.value)">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="4" name="num4" id="num4" onclick="getValue(this.value)">
+            </td>
+            <td>
+                <input type="button" value="5" name="num5" id="num5" onclick="getValue(this.value)">
+            </td>
+            <td>
+                <input type="button" value="6" name="num6" id="num6" onclick="getValue(this.value)">
+            </td>
+            <td>
+                <input type="button" value="-" name="sub" id="sub" onclick="pheptoan(this.value)">
+            </td>            
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="7" name="num7" id="num7" onclick="getValue(this.value)">
+            </td>
+            <td>
+                <input type="button" value="8" name="num8" id="num8" onclick="getValue(this.value)">
+            </td>
+            <td>
+                <input type="button" value="9" name="num9" id="num9" onclick="getValue(this.value)">
+            </td>
+            <td>
+                <input type="button" value="*" name="nhan" id="nhan" onclick="pheptoan(this.value)">
+            </td>            
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="AC" name="AC" id="AC" onclick="reset()">
+            </td>
+            <td colspan="2"> 
+                <input type="button" value="=" name="equal" id="qual" onclick="ketqua()">
+            </td>
+            <td>
+                <input type="button" value="/" name="chia" id="chia" onclick="pheptoan(this.value)">
+            </td>            
+        </tr>
+    </table>
+</body>
+</html>
