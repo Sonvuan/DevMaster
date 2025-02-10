@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giải phương trình</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        function khaibao() {
+            var a = prompt("Nhập a:");
+            var b = prompt("Nhập b:");
+            var c = prompt("Nhập c:");
+
+            if (isNaN(a) || isNaN(b) || isNaN(c)) {
+                document.getElementById('demo').innerHTML = "Vui lòng nhập số hợp lệ!";
+                return;
+            }
+
+            if (a == 0) {
+                pt1(b, c);
+            } else {
+                ptb2(a, b, c);
+            }
+        }
+
+        function pt1(b, c) {
+            if (b == 0) {
+                if (c == 0) {
+                    document.getElementById('demo').innerHTML = "Phương trình vô số nghiệm (PTVSN)";
+                } else {
+                    document.getElementById('demo').innerHTML = "Phương trình vô nghiệm (PTVN)";
+                }
+            } else {
+                var nghiem = -b/c;
+                document.getElementById('demo').innerHTML = "Nghiệm của phương trình: " + nghiem;
+            }
+        }
+
+        function ptb2(a, b, c) {
+            var delta = b * b - 4 * a * c;
+            if (delta < 0) {
+                document.getElementById('demo').innerHTML = "Phương trình vô nghiệm (PTVN)";
+            } else if (delta == 0) {
+                var nghiem = -b / (2 * a);
+                document.getElementById('demo').innerHTML = "Phương trình có nghiệm kép: " + nghiem;
+            } else {
+                var nghiem1 = (-b + Math.sqrt(delta)) / (2 * a);
+                var nghiem2 = (-b - Math.sqrt(delta)) / (2 * a);
+                document.getElementById('demo').innerHTML = "Phương trình có 2 nghiệm phân biệt: " + nghiem1 + " và " + nghiem2;
+            }
+        }
+
+        khaibao(); // Gọi hàm để thực thi
+    </script>
+</body>
+</html>
