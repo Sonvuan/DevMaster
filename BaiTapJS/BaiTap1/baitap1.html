@@ -7,6 +7,12 @@
     <script>
         function check(){
             var name = document.getElementById('name').value;
+            var pass = document.getElementById('pass').value;
+            if(name == '' || pass == ''){
+                alert('Tai khoan va mat khau khong hop le');
+            }else{
+                alert('Đăng nhập thành công');
+            }
         }
     </script>
 </head>
@@ -23,7 +29,7 @@
         <input type="radio" name="" id="">
         <label for="remember">Remember Set</label>
 
-        <button type="submit">Login</button>
+        <button type="submit" onclick="check()">Login</button>
         <button type="reset">Reset</button>
     </form>
 </body>
