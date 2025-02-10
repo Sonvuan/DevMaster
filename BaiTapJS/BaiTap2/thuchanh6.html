@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function TinhToan(){
+            var arr_a = prompt("Nhập a các số, cách nhau bằng dấu phẩy:").split(",");
+            function tong(arr_a){
+                var tongc =0;
+                var tongl=0;
+                for(var i=0;i<=arr_a.length;i++){
+                    if(i%2==0){
+                        tongc=tongc+i;
+                    }else{
+                        tongl=tongl+i;
+                    }
+                }
+                document.write("Tổng phần tử:"+arr_a.length +"<br/>");
+                document.write("Tổng các số chẵn: "+tongc+"<br/>");
+                
+                document.write("Tổng các số lẻ: "+tongl);
+            }
+            tong(arr_a);
+        }
+        TinhToan();
+    </script>
+</body>
+</html>

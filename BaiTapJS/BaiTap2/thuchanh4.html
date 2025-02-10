@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        function chage(){
+            var txt=prompt("Nhập chuỗi: ")
+            function chartcode(txt){
+                document.getElementById('demo').innerHTML="Độ dài của chuỗi: " +txt.length;
+                document.write("Mã char code của từng ký tự: <br />");
+                for(var i=0;i<txt.length;i++){
+                    document.write( txt[i]+"<>"+txt[i].charCodeAt(0)+"<br />");
+                }
+            }
+            function aphabel(txt){
+                var newText="";
+                document.getElementById('demo').innerHTML="Độ dài của chuỗi: " +txt.length;
+                document.write("Mã char code của từng ký tự: <br />");
+                for(var i=0;i<txt.length;i++){
+                    if(i==0){
+                        newText +=txt[i].charCodeAt(0);
+                    }else{
+                        newText +=","+txt[i].charCodeAt(0);
+                    }
+                }
+                document.write("chuỗi charcode: <br />"+newText+'<br />');
+                var arrText = newText.split(",");
+                for(var i=0;i<arrText.length;i++){
+                    document.write(String.fromCharCode(arrText[i]));
+                }
+            }
+            chartcode(txt);
+            aphabel(txt);
+        }
+        chage();
+    </script>
+</body>
+</html>

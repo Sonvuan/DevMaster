@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        function kiemtra() {
+            var a = parseInt(prompt('Nhập a:'));
+            var b = parseInt(prompt('Nhập b:'));
+            
+            function so(a, b) {
+                var tongc = 0; // Tổng số chẵn
+                var tongsl = 0; // Tổng số lẻ
+                
+                for (var i = a; i <= b; i++) {
+                    if (i % 2 == 0) {
+                        tongc += i;
+                    } else {
+                        tongsl += i;
+                    }
+                }
+
+                // Hiển thị kết quả đúng cách
+                document.getElementById('demo').innerHTML = 
+                    "Tổng số chẵn: " + tongc + "<br>" +
+                    "Tổng số lẻ: " + tongsl;
+            }
+
+            so(a, b);
+        }
+        
+        kiemtra();
+    </script>
+</body>
+</html>
