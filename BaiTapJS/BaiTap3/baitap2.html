@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .error {
+            color: red;
+        }
+    </style>
+    <script>
+        function checkAdd() {
+            var userName = document.getElementById("userName");
+            var slg = document.getElementById("slg"); // Đổi từ "Slg" thành "slg"
+            var price = document.getElementById("price"); // Đổi từ "Price" thành "price"
+            var mota = document.getElementById("mota"); // Đổi từ "Mota" thành "mota"
+
+            // Reset lỗi trước khi kiểm tra
+            document.getElementById("txtErrorUsername").innerHTML = "";
+            document.getElementById("txtErrorSlg").innerHTML = "";
+            document.getElementById("txtErrorPrice").innerHTML = "";
+            document.getElementById("txtErrorMota").innerHTML = "";
+
+            var isValid = true;
+
+            if (userName.value.trim() === "") {
+                document.getElementById("txtErrorUsername").innerHTML = "Bạn chưa nhập user";
+                document.getElementById("txtErrorUsername").className = "error";
+                userName.focus();
+                isValid = false;
+            }
+
+            if (slg.value.trim() === "") {
+                document.getElementById("txtErrorSlg").innerHTML = "Bạn chưa nhập số lượng";
+                document.getElementById("txtErrorSlg").className = "error";
+                isValid = false;
+            }
+
+            if (price.value.trim() === "") {
+                document.getElementById("txtErrorPrice").innerHTML = "Bạn chưa nhập giá";
+                document.getElementById("txtErrorPrice").className = "error";
+                isValid = false;
+            }
+
+            if (mota.value.trim() === "") {
+                document.getElementById("txtErrorMota").innerHTML = "Bạn chưa nhập mô tả";
+                document.getElementById("txtErrorMota").className = "error";
+                isValid = false;
+            }
+
+            if (isValid) {
+                alert("Thêm sản phẩm thành công");
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action="">
+        <table width="350">
+            <caption>
+                <h2>Thêm Sản Phẩm</h2>
+            </caption>
+            <tr>
+                <td>Tên Sản Phẩm</td>
+                <td>
+                    <input type="text" name="userName" id="userName" placeholder="Nhập Tên Sản Phẩm">
+                    <br/> <label id="txtErrorUsername"></label>
+                </td>
+            </tr>
+            <tr>
+                <td>Số Lượng</td>
+                <td>
+                    <input type="number" name="slg" id="slg" placeholder="Nhập Số Lượng">
+                    <br/> <label id="txtErrorSlg"></label>
+                </td>
+            </tr>
+            <tr>
+                <td>Giá</td>
+                <td>
+                    <input type="number" name="price" id="price" placeholder="Nhập Giá Cả">
+                    <br/> <label id="txtErrorPrice"></label>
+                </td>
+            </tr>
+            <tr>
+                <td>Mô Tả</td>
+                <td>
+                    <textarea name="mota" id="mota"></textarea>
+                    <br/> <label id="txtErrorMota"></label>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="button" value="Add" id="add" name="add" onclick="checkAdd()">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
