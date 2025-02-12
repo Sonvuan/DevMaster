@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <style>
+        #main {
+            border: solid 1px #ccc;
+            padding: 10px;
+            width: 350px;
+        }
+
+        .clearfix {
+            overflow: hidden;
+            clear: both;
+        }
+
+        #main ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #main ul li {
+            float: left;
+        }
+
+        #main ul li a {
+            display: block;
+            border: solid 1px #ccc;
+            padding: 5px 10px;
+            text-decoration: none;
+            margin-right: 5px;
+        }
+
+        #content {
+            padding: 15px 0;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        /* Định nghĩa các màu */
+        .maudo {
+            color: red;
+        }
+
+        .mauanh {
+            color: blue;
+        }
+
+        .mauvang {
+            color: yellow;
+        }
+
+        .maughi {
+            color: gray;
+        }
+
+        .mautim {
+            color: purple;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $("a").click(function (e) {
+                var mau = e.target.id;
+                $("#content").removeClass().addClass("clearfix " + mau);
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="main">
+        <h3>Chọn màu chữ</h3>
+        <ul class="clearfix">
+            <li><a href="javascript:void(0)" id="maudo">Đỏ</a></li>
+            <li><a href="javascript:void(0)" id="mauanh">Xanh</a></li>
+            <li><a href="javascript:void(0)" id="mauvang">Vàng</a></li>
+            <li><a href="javascript:void(0)" id="maughi">Ghi</a></li>
+            <li><a href="javascript:void(0)" id="mautim">Tím</a></li>
+        </ul>
+        <div id="content" class="clearfix">Lập trình wed với PHP</div>
+    </div>
+</body>
+</html>

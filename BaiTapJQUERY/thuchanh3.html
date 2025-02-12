@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <style>
+        #main{
+            width: 670px;
+            height: 446px;
+            margin: 0 auto;
+        }
+        #thum{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        #thum ul li {
+            float: left;
+            margin-right: 2px;
+        }
+        #thum ul li a img{
+            width: 105px;
+            border: solid 2px #ccc;
+        }
+        .actived {
+            border: solid 4px red !important;
+        }
+    </style>
+    <script>
+        jQuery(document).ready(function($){
+            $("a>img").click(function (event) {
+                img = $(this).attr('src');
+                $("#image > img").attr({
+                    'src' : img
+                });
+                $("a>img").removeClass('actived');
+                $(this).addClass('actived');
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="main">
+        <div id="image">
+            <img src="/Frontend/Baitap2/img/backgroud1.png" alt="">
+        </div>
+        <div id="thum">
+            <ul>
+                <li>
+                    <a href="javascript:void(0)">
+                    <img src="/Frontend/Baitap2/img/backgroud1.png" alt=""></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">
+                    <img src="/Frontend/Baitap2/img/backgroud2.png" alt=""></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">
+                    <img src="/Frontend/Baitap2/img/backgroud3.png" alt=""></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">
+                    <img src="/Frontend/Baitap2/img/banner.png" alt=""></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">
+                    <img src="/Frontend/Baitap2/img/banner1.png" alt=""></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">
+                    <img src="/Frontend/Baitap2/img/linh-vuc-hoat-dong-1.png" alt=""></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">
+                    <img src="/Frontend/Baitap2/img/linh-vuc-hoat-dong-2.png" alt=""></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
