@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <style>
+        .clearfix {
+            clear: both;
+            overflow: hidden;
+        }
+
+        #main ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #main ul li {
+            float: left;
+            margin-right: 5px;
+        }
+
+        #main ul li a {
+            border-left: solid 1px #ccc;
+            border-right: solid 1px #ccc;
+            border-top: solid 1px #ccc;
+            padding: 8px 20px;
+            display: block;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            text-decoration: none;
+            background: #d2d3d5;
+            color: #000;
+        }
+
+        .selected {
+            border-bottom: solid 1px #fff;
+            background: #782a90 !important;
+            color: #fff !important;
+        }
+
+        #content {
+            border: solid 1px #ccc;
+            width: 500px;
+            height: 300px;
+            margin-top: 35px;
+            padding: 5px 10px;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            // Load nội dung mặc định
+            $("#content").load("tabs/html.html");
+
+            // Bắt sự kiện click cho tất cả các thẻ <a>
+            $("#main ul li a").click(function (event) {
+                // Xóa class "selected" khỏi tất cả các thẻ <a>
+                $("a").removeClass("selected");
+
+                // Lấy ID của thẻ <a> được click
+                var id = event.target.id;
+
+                // Thêm class "selected" cho thẻ được chọn
+                $("#" + id).addClass("selected");
+
+                // Load nội dung tương ứng vào #content
+                $("#content").load("tabs/" + id + ".html");
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="main" class="clearfix">
+        <ul id="clearfix">
+            <li><a href="javascript:void(0)" class="selected" id="html">HTML</a></li>
+            <li><a href="javascript:void(0)" id="css">CSS</a></li>
+            <li><a href="javascript:void(0)" id="jquery">Jquery</a></li>
+            <li><a href="javascript:void(0)" id="php">PHP</a></li>
+        </ul>
+        <div id="content">
+        </div>
+    </div>
+</body>
+</html>
