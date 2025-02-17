@@ -1,0 +1,9 @@
+.cart-item img { max-width: 100px; border-radius: 5px; }
+body{background-color: gray;}
+
+.card{
+    background-color: #e6e6df;
+}
+#product{
+    background-color: #ffff;
+}
