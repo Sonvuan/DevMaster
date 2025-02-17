@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Thông Tin Sinh Viên</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Bootstrap CSS v5.3.0 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <div class="container product-container mt-4">
+        <div class="row">
+            <!-- Cột bên trái: bảng thông tin sinh viên -->
+            <div class="col-lg-8">
+                <div id="cart">
+                    <div class="row container">
+                        <!-- Tìm kiếm -->
+                        <div class="col-lg-6 mb-3 mt-4">
+                            <button type="submit" class="btn btn-primary ">Tìm Kiếm</button>
+                        </div>
+                        <div class="col-lg-6 mt-4">
+                            <input type="search" class="form-control" id="search" name="search"
+                                placeholder="Tìm kiếm sinh viên" />
+                        </div>
+                        <div id="cart-items">
+                            
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cột bên phải: Form nhập thông tin sinh viên -->
+            <div class="col-lg-4">
+                <div>
+                    <h5 class="mb-4">Thông Tin Sinh Viên</h5>
+                    <form action="">
+                        <div class="mb-3">
+                            <label for="masb" class="form-label">Mã Sinh Viên:</label>
+                            <input type="text" class="form-control" id="masv" placeholder="Nhập mã sinh viên"
+                                name="masv" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="tensv" class="form-label">Tên Sinh Viên:</label>
+                            <input type="text" class="form-control" id="namesv" placeholder="Nhập tên sinh viên"
+                                name="namesv" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="gioitinhsv" class="form-label">Tuổi:</label>
+                            <input type="number" class="form-control" id="agesv" name="agesv" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="gioitinhsv" class="form-label">Giới Tính:</label>
+                            <input type="text" class="form-control" id="gioitinhsv" name="gioitinhsv" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="ngaysinhsv" class="form-label">Ngày Sinh:</label>
+                            <input type="date" class="form-control" id="datesv" name="datesv" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="noisinhsv" class="form-label">Nơi Sinh:</label>
+                            <input type="text" class="form-control" id="bornsv" placeholder="Nhập nơi sinh"
+                                name="bornsv" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="diachisv" class="form-label">Địa Chỉ:</label>
+                            <input type="text" class="form-control" id="placesv" placeholder="Nhập Địa Chỉ"
+                                name="placesv" />
+                        </div>
+                        <button type="submit" id="saveBtn" class="btn btn-primary w-100">Lưu Thông Tin</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/BaiTapJQUERY/formsvien/form.js"></script>
+    <!-- Bootstrap JS và Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
